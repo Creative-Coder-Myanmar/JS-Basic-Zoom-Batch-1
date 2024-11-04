@@ -138,15 +138,100 @@
 // (everything is object)
 // object
 
-let person = {
-    name: "hlaing min than",
-    age: 23,
-    isMarried: true,
-    eat: () => {
-        console.log("person is eating");
-    }
-}
-person.name = "mgmg";
-person.hobby = "coding";
+//window
 
-person.eat()
+// let person = {
+//     name: "hlaing min than",//property
+//     age: 23, //property
+//     isMarried: true, //property
+//     eat : function() {
+//         console.log(this)
+//     }
+// }
+
+
+// let anotherObj = {
+//     ...person,
+//     run : function() {
+//         console.log(this.name + "is running")
+//     }
+// }
+
+// anotherObj.run()
+
+//JS Array of objects data structure
+
+let products  = [
+    {
+        name : "iphone",
+        price : 2000
+    },
+    {
+        name : "i watch",
+        price : 1000
+    },
+];
+
+// json
+let json = JSON.stringify(products);
+console.log(json); // ??? -> string
+console.log(JSON.parse(`[{"name":"iphone","price":2000},{"name":"i watch","price":1000}]`))
+
+// products.push({
+//     name : "i pad",
+//     price : 3000
+// })
+
+//what is JSON ? (JavaScript Object Notation) -> String
+
+// let responsePHP = '[{"name":"iphone","price":2000},{"name":"i watch","price":1000},{"name":"i pad","price":3000}]';
+
+// let productsFromPHP = JSON.parse(responsePHP);
+
+// console.log(productsFromPHP);
+
+
+//program
+
+// let age = 10;
+// let name = age > 30 ? 'mgmg' : 'aung aung'; 
+
+// if(age === 30 ) {
+//     console.log('your age is 30')
+// } else if(age === 40 ) {
+//     console.log('your age is 40')
+// }   else if(age === 50 ) {
+//     console.log('your age is 50')
+// } else {
+//     console.log('your age is not 30,40,50')
+// }
+
+// switch (age) {
+//     case 30:
+//         console.log('your age is 30')
+//         break;
+//     case 40:
+//         console.log('your age is 40')
+//         break;
+//     case 50:
+//         console.log('your age is 50')
+//         break;
+//     default:
+//         console.log('your age is not 30,40,50')
+//         break;
+// }
+
+//map,filter,forEach
+
+// loop an object with for 
+
+// let person = {
+//     name : "hlaing min than",
+//     age : 23,
+//     isMarried : true
+// };
+
+
+// for (key in person) {
+//     console.log(`${key}  is  ${person[key]}`)
+// }
